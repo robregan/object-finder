@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>object detect</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+   <% if(objects.length > 0) { %>
+
+    <img src="<%= img%>" alt="uploaded image" /><br>
+
+    Objects found:
+    <ul>
+      <% for(let i = 0; i < objects.length; i++) { %>
+         <li><%= objects[i].object %> <br>  -- confidence level: <%=Math.ceil(objects[i].confidence.toFixed(2) * 100)  %>%</li>
+     <% } %>
+
+    
+
+    <% }else { %>
+      <img src="<%= img%>" alt="uploaded image" />
+    <h1> No objects found </h1>
+    <% } %>
+
+
+
+      <form action="/" enctype="multipart/form-data" method="post">
+      <input type="file" name="file-to-upload" />
+      <input type="submit" value="Upload" />
+    </form>
+  </body>
+</html>
