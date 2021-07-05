@@ -1,3 +1,8 @@
+# object detector!
+  - Using Azure's cognitive service, computer vision, this program will analyze a photo and respond with what objects it finds!
+  - live version: https://object-detecta.herokuapp.com/ 
+
+
 # Install
 
 `npm install`
