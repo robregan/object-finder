@@ -96,6 +96,7 @@ app.post("/", upload.single("file-to-upload"), async (req, res) => {
        */
     res.render("result.ejs", { objects: objects, img: objectURL });
   } catch (err) {
+     res.redirect('/')
     console.log(err);
   }
 });
