@@ -1,0 +1,21 @@
+img{
+    float: left;
+    width: 500px;
+}
+body{
+    font-family: 'Silkscreen', cursive;
+
+    
+    text-align: center;
+}
+
+#inputTwo{
+    background: lightseagreen;
+}
+ul{
+    font-size: 25px;
+}
+li{
+    list-style-type: none;
+    
+}
